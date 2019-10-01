@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+
+    </head>
+    <header>
+        <div class="row1">
+            <div class="logo">
+                <img src="Dice Logo.png" />
+            </div>
+        </div>
+    </header>
+    <body class="stuff">
+
+
+        <h1>Class Demo. Testing Sprint 1.</h1>
+        <pair-switch inactive-color="#b76e79" active-color="#ffd1dc" width=8em></pair-switch>
+
+        <core-hello font-family="helvetica" font-size="60pt" lang="en" rainbow>Peter</core-hello>
+
+        <pair-switch inactive-color="#C0C0C0" active-color="#ffd1dc" active-text="Peter's Switch" id="switch"></pair-switch>
+
+        <p>Default Slider</p>
+        <pair-slider value-name="Red" value="5" min="1" max="10" tooltip id="slider"></pair-slider>
+
+        <pair-button id="opener2">Plain Button</pair-button>
+        <pair-button type="success" icon="share">Share</pair-button>
+        <pair-button icon="edit"></pair-button>
+        <pair-button icon="delete"></pair-button>
+        <pair-button round='true' icon="search"></pair-button>
+        <pair-button id="opener" loading='true' icon="search">loading</pair-button>
+
+        <pair-color-picker round></pair-color-picker>
+
+        <pair-dialog
+            pusher="opener"
+            top="15%"
+            center
+            round>
+            <pair-slider></pair-slider>
+        </pair-dialog>
+
+        <!--
+        <pair-dialog
+            title="Tips"
+            pusher="opener2"
+            width="30%"
+            :before-close="handleClose">
+
+            <span>This is a message</span>
+            <span slot="footer" class="dialog-footer">
+                <pair-button @click="dialogVisible = false">Cancel</pair-button>
+                <pair-button type="primary" @click="dialogVisible = false">Confirm</pair-button>
+            </span>
+
+        </pair-dialog>
+        -->
+
+
+      <!---
+        <p>The slider with disabled attribute:</p>
+        <pair-slider disabled='disabled'></pair-slider>
+      -->
+        </div>
+    </body>
+
+    <script src="../lib/elements/pubsub/pubsub.js"></script>
+
+    <script src="../lib/elements/core-hello/core-hello.js">
+    document.getElementById("paragraph").style.fontSize = "25px";
+    </script>
+    <script src="../lib/elements/pair-switch/pair-switch.js"></script>
+    <script src="../lib/elements/pair-slider/pair-slider.js"></script>
+    <script src="../lib/elements/pair-button/pair-button.js"></script>
+    <!--- change me-->
+    <script src="../lib/elements/pair-color-picker/pair-color-picker.js"></script>
+    <script src="../lib/elements/pair-dialog/pair-dialog.js"></script>
+    <script src="interact.js"></script>
+
+
+</html>

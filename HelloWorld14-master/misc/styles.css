@@ -1,0 +1,62 @@
+h1 {
+    color: violet
+}
+
+#paragraph {
+    color: yellowgreen;
+}
+
+.ps {
+    background-color: black;
+    color: white;
+    margin: 20px;
+    padding: 20px;
+}
+
+.stuff {
+    background-color: cornsilk;
+    color: gray;
+    margin: 20px;
+    padding: 20px;
+}
+
+.row1 {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.logo img {
+    width: 50px;
+    height: auto;
+}
+
+#grad1 {
+    background: red;
+    background: -webkit-linear-gradient(left, red, orange, yellow, green, cyan, blue, violet);
+    background: -o-linear-gradient(right, red, orange, yellow, green, cyan, blue, violet);
+    background: -moz-linear-gradient(right, red, orange, yellow, green, cyan, blue, violet);
+    background: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 20px;
+    line-height: 20px;
+    background-size: 150px;
+
+}
+
+
+
+.grad1class {
+    font-size: 200px;
+}
+
+#charlie {
+    font-size: 20px;
+    line-height: 20px;
+}
+
+pair-switch p.red {
+    color: var(--color, red);
+}
+

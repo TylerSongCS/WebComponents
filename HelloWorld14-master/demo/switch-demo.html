@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html class="gr__semantic-ui_com" style="">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <!-- Standard Meta -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+  <link rel="image_src" type="image/jpeg" href="demo_files/logo.png">
+
+  <!-- Site Properities -->
+  <meta name="generator" content="DocPad v6.79.4">
+  <title>Switch Component Demo</title>
+
+  <meta name="description" content="A button indicates a possible user action">
+  <meta name="keywords" content="html5, ui, library, framework, javascript">
+
+  <script id="twitter-wjs" src="demo_files/widgets.js"></script>
+  <script async="" src="demo_files/analytics.js"></script>
+  <script src="demo_files/detect.js"></script>
+  <script src="demo_files/jquery.js"></script>
+  <script src="demo_files/clipboard.js"></script>
+  <script src="demo_files/cookie.js"></script>
+  <script src="demo_files/easing.js"></script>
+  <script src="demo_files/highlight.js"></script>
+  <script src="demo_files/history.js"></script>
+  <script src="demo_files/state.js"></script>
+  <script src="demo_files/tablesort.js"></script>
+  <script src="demo_files/underscore.js"></script>
+  <script src="demo_files/semantic.js"></script>
+  <script src="demo_files/docs.js"></script>
+  <script src="../lib/elements/pair-switch/pair-switch.js"></script>
+  <script src="../lib/elements/pair-slider/pair-slider2.js"></script>
+  <link rel="stylesheet" type="text/css" class="ui" href="demo_files/semantic.css">
+  <link rel="stylesheet" type="text/css" href="demo_files/docs.css">
+  <link rel="stylesheet" type="text/css" href="demo_files/rtl.css">
+  <script type="text/javascript" src="demo_files/live.js"></script>
+  <style type="text/css">
+    .txlive {
+      display: none;
+    }
+  </style>
+
+
+  <script type="text/javascript" src="demo_files/manifest.js"></script>
+  <script charset="utf-8" src="demo_files/button_002.js"></script>
+</head>
+
+<body id="example" class="button-page pushable" ontouchstart="" data-gr-c-s-loaded="true">
+
+
+
+  <div class="pusher">
+    <div class="full height">
+      <div class="article">
+        <link rel="stylesheet/less" type="text/css" href="https://semantic-ui.com/src/definitions/elements/button.less">
+        <script src="demo_files/button.js"></script>
+        <script src="demo_files/state.js"></script>
+        <!-- ^ magic -->
+
+        <h1 class="ui header">Toggle Switch</h1>
+        <h3 class="ui header">An easy to use and customizable toggle-switch web component</h3>
+
+        <div class="main ui container">
+          <h3 class="ui header">Basic Usage</h3>
+          <h5 class="ui header">Just a simple switch</h5>
+          <div class="follow example">
+            <i class="fitted icon code"></i><a class="anchor" id="button"></a>
+            <pair-switch></pair-switch>
+          </div>
+
+          <h3 class="ui header">Disabled</h3>
+          <div class="follow example">
+            <i class="fitted icon code"></i><a class="anchor" id="button"></a>
+            <pair-switch disabled></pair-switch>
+            <br>
+            <pair-switch checked disabled></pair-switch>
+          </div>
+
+          <h3 class="ui header">Width</h3>
+          <h5 class="ui header">Can adjust the width of the switch</h5>
+          <div class="follow example">
+            <i class="fitted icon code"></i><a class="anchor" id="button"></a>
+            <pair-switch width="200px" active-color="#007bff" checked></pair-switch>
+            <br>
+            <pair-switch width="400px" active-color="#28a745" checked></pair-switch>
+            <br>
+            <pair-switch width="600px" active-color="#dc3545" checked></pair-switch>
+          </div>
+
+          <h3 class="ui header">Active and Inactive Text</h3>
+          <h5 class="ui header">Can customize the text displayed on each side of the switch</h5>
+          <div class="example" data-class="primary, secondary">
+            <i class="fitted icon code"></i><a class="anchor" id="emphasis"></a>
+            <pair-switch active-text="switch is on" inactive-text="switch is off" active-color="#007bff"></pair-switch>
+            <pair-switch active-text="think about the user" inactive-text="think about yourself" active-color="#28a745"
+              checked></pair-switch>
+          </div>
+
+          <h3 class="ui header">Active and Inactive Value</h3>
+          <h5 class="ui header">The binding value of the switch takes boolean, string or number value</h5>
+          <div class="example" data-class="primary, secondary">
+            <i class="fitted icon code"></i><a class="anchor" id="emphasis"></a>
+            <pair-switch id="my-switch" active-value="123456" inactive-value="the switch is off"></pair-switch>
+            <script>
+              window.onload = () => {
+                let el = document.getElementById('my-switch');
+                el.addEventListener('change', () => {
+                  alert(el.value);
+                });
+              };
+            </script>
+          </div>
+
+          <h3 class="ui header">Active and Inactive Color</h3>
+          <h5 class="ui header">Customize the switch background color to match your website</h5>
+          <div class="example" data-class="primary, secondary">
+            <i class="fitted icon code"></i><a class="anchor" id="emphasis"></a>
+            <pair-switch active-color="#ffc107" inactive-color="#efefef" width="100px" checked></pair-switch>
+            <br>
+            <pair-switch active-color="#17a2b8" inactive-color="#343a40" width="100px"></pair-switch>
+          </div>
+
+
+          <h3 class="ui header">Shadow</h3>
+          <h5 class="ui header">Adds shadow effect to the switch</h5>
+          <div class="follow example">
+            <i class="fitted icon code"></i><a class="anchor" id="pair-switch"></a>
+            <pair-switch shadow checked active-color="#007bff"></pair-switch>
+            <br>
+            <pair-switch shadow checked active-color="#28a745"></pair-switch>
+            <br>
+            <pair-switch shadow checked active-color="#dc3545"></pair-switch>
+          </div>
+
+          <h3 class="ui header">Bootstrap Theme</h3>
+          <h5 class="ui header">Built in Twitter Bootstrap themes</h5>
+          <div class="follow example">
+            <i class="fitted icon code"></i><a class="anchor" id="pair-switch"></a>
+            <pair-switch checked primary active-text="primary"></pair-switch>
+            <br>
+            <pair-switch checked secondary active-text="secondary"></pair-switch>
+            <br>
+            <pair-switch checked success active-text="success"></pair-switch>
+            <br>
+            <pair-switch checked danger active-text="danger"></pair-switch>
+            <br>
+            <pair-switch checked warning active-text="warning"></pair-switch>
+            <br>
+            <pair-switch checked info active-text="info"></pair-switch>
+            <br>
+            <pair-switch checked dark active-text="dark"></pair-switch>
+          </div>
+
+          <h3 class="ui header">Interaction with Other Components</h3>
+          <h5 class="ui header">The attach attribute takes an ID of the element you want to attach, you can
+            disable/enable that component with the switch</h5>
+          <div class="follow example">
+            <i class="fitted icon code"></i><a class="anchor" id="pair-switch"></a>
+            <pair-slider id="my-slider"></pair-slider>
+            <br>
+            <pair-switch active-text="enable slider" inactive-text="disable slider" attach="my-slider"></pair-switch>
+          </div>
+
+          <h5 class="ui header">Another example with 2 switches</h5>
+          <div class="follow example">
+            <i class="fitted icon code"></i><a class="anchor" id="pair-switch"></a>
+            <pair-switch id="my-control-switch" inactive-text="disable important stuff"
+              active-text="enable important stuff" danger></pair-switch>
+            <br>
+            <pair-switch active-text="enable control switch" inactive-text="disable control switch"
+              attach="my-control-switch"></pair-switch>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- v magic -->
+    <script>
+      window.less = {
+        async: true,
+        environment: 'production',
+        fileAsync: false,
+        onReady: false,
+        useFileCache: true
+      };
+    </script>
+    <script src="demo_files/less.js"></script>
+    <iframe scrolling="no" allowtransparency="true" src="demo_files/widget_iframe.html" title="Twitter settings iframe"
+      style="display: none;" frameborder="0"></iframe>
+</body>
+</html>
